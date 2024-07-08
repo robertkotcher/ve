@@ -1,79 +1,55 @@
 body {
-  background: #eee;
+  margin-top: 20px;
+  color: #1a202c;
+  text-align: left;
+  background-color: #e2e8f0;
+}
+.main-body {
+  padding: 15px;
+}
+.card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .card {
-  border: none;
-
   position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.card:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #e1bee7;
-  transform: scaleY(1);
-  transition: all 0.5s;
-  transform-origin: bottom;
-}
-
-.card:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #8e24aa;
-  transform: scaleY(0);
-  transition: all 0.5s;
-  transform-origin: bottom;
-}
-
-.card:hover::after {
-  transform: scaleY(1);
-}
-
-.fonts {
-  font-size: 11px;
-}
-
-.social-list {
   display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
-.social-list li {
-  padding: 10px;
-  color: #8e24aa;
-  font-size: 19px;
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
 }
 
-.buttons button:nth-child(1) {
-  border: 1px solid #8e24aa !important;
-  color: #8e24aa;
-  height: 40px;
+.gutters-sm {
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
-.buttons button:nth-child(1):hover {
-  border: 1px solid #8e24aa !important;
-  color: #fff;
-  height: 40px;
-  background-color: #8e24aa;
+.gutters-sm > .col,
+.gutters-sm > [class*="col-"] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
 }
 
-.buttons button:nth-child(2) {
-  border: 1px solid #8e24aa !important;
-  background-color: #8e24aa;
-  color: #fff;
-  height: 40px;
+.bg-gray-300 {
+  background-color: #e2e8f0;
+}
+.h-100 {
+  height: 100% !important;
+}
+.shadow-none {
+  box-shadow: none !important;
 }
