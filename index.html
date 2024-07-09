@@ -65,7 +65,7 @@
         background-color: #ddd;
         width: 100%;
         min-height: 40px;
-        margin-bottom: 20px;
+        margin: 50px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,18 +80,40 @@
       .container {
         max-width: 900px;
       }
+
+      .logos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+      }
+
+      .logo {
+        margin: 0 24px;
+        width: 100px;
+        height: 100px;
+      }
     </style>
   </head>
   <body>
     <div class="hero-section">
       <h1>Welcome to Verified Engineers</h1>
-      <p>Your trusted source for top engineering talent</p>
+      <p>Where engineers interview engineers</p>
       <a href="mailto:rkotcher@gmail.com,001johan@gmail.com?subject=I'd like a list of vetted engineers who know [LANGUAGE]" class="btn btn-custom">Learn More</a>
     </div>
 
     <div class="container content-section" id="learn-more">
       <h2>About Us</h2>
-      <p>At Verified Engineers, we specialize in connecting businesses with pre-screened engineering professionals. Each candidate is hand-selected by real engineers.</p>
+      <p>At Verified Engineers, we specialize in connecting you with pre-screened engineering professionals. Each candidate is hand-selected by real engineers.</p>
+      <p>Our interviewer network has worked at top tech institutions, including:</p>
+      <div class="logos">
+        <img class="logo" src="cmu.png"/>
+        <img class="logo" style="margin-left: 40px; width: 120px; height: 100px;" src="nasa.png"/>
+        <img class="logo" style="width: 120px; height: 90px;" src="google.png"/>
+        <img class="logo" style="width: 120px; height: 90px;" src="amazon.png"/>
+      </div>
       
       <h2>Our Mission</h2>
       <p>Hiring and interviewing are challenging processes. Candidates often struggle to showcase their best for each company due to the high bar for securing a first interview and the sheer number of applicants. This, in turn, makes it difficult for companies to identify the right candidates to invest time in. Our team, made up of experienced engineers, understands these challenges firsthand. Our mission is to eliminate inefficiencies on both sides.</p>
