@@ -95,6 +95,37 @@
         width: 100px;
         height: 100px;
       }
+
+      ol {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ol li {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 20px; /* Adjust as needed for spacing between items */
+        position: relative;
+      }
+
+      ol li::before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        font-size: 2em; /* Adjust size as needed */
+        margin-right: 10px; /* Adjust spacing between number and text */
+        color: #000; /* Adjust color as needed */
+      }
+
+      ol {
+        counter-reset: item;
+      }
+
+      ol li {
+        padding-left: 40px; /* Adjust padding to make space for large numbers */
+      }
+
     </style>
   </head>
   <body>
@@ -137,21 +168,20 @@
         <img src="recruiting.png"/>
       </div>
       
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Why Choose Us?</h3>
-          <p>Verified Engineers takes the guesswork out of hiring by offering:</p>
-          <ul>
-            <li>Comprehensive candidate profiles with detailed interview summaries.</li>
-            <li>Access to a pool of pre-vetted engineering talent, saving you time and resources.</li>
-            <li>Transparency in the hiring process with no hidden fees or charges.</li>
-            <li>Continuous support to ensure the right fit for your team and project.</li>
-          </ul>
-        </div>
+      <h2>Our Process</h2>
+      <div style="text-align: center;">
+        <p>VerifiedEngineers delivers engineers to you in three steps:</p>
       </div>
+      <hr style="margin-top: 60px;"/>
+      <ol>
+        <li>You will be connected with a point of contact. This person will work with you to identify candidate filters and review your desired timeline.</li>
+        <li>VerifiedEngineers will begin compiling a list of candidates that match your requirements. You will typically begin to see candidate profiles after only one or two days.</li>
+        <li>You will see interview summaries and scores provided to us by our network of interviewers. You can choose which candidates to speak with further, with the confidence that your time will be well-spent.</li>
+      </ol>
+      <hr style="margin-bottom: 60px;"/>
       
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
           <h3>Explore a Sample Profile</h3>
           <p>Check out our curated engineer profiles. Reach out to our team today!</p>
           <a href="mailto:rkotcher@gmail.com,001johan@gmail.com?subject=I'd like to see an example profile." class="btn btn-custom" target="_blank">View Example Profile</a>
